@@ -1,17 +1,20 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+
+import Navbar from '@/components/layout/Navbar';
+import SideBar from '@/components/layout/SideBar';
 
 const Dashboard = () => {
   return (
     <>
-      <div>Dashboard</div>;
-      <div className="hidden sm:flex sm:space-x-8">
-        <NavLink to="">Home</NavLink>
-        <NavLink to="bakanes">Bakanes</NavLink>
+      <Navbar />
+
+      <div className="flex pt-16 h-screen">
+        <SideBar />
+
+        <main className="flex-1 overflow-x-auto py-10 px-8 bg-gray-50">
+          <Outlet />
+        </main>
       </div>
-      ;
-      <main className="max-w-7xl mx-auto py-8 px-4">
-        <Outlet />
-      </main>
     </>
   );
 };

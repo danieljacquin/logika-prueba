@@ -104,7 +104,7 @@ const LoginForm = ({ onHandleLogin, isSubmiting }: LoginFormProps) => {
                   <Spinner />
                 </div>
               ) : (
-                'Register'
+                'Ingresar'
               )}
             </button>
           </div>

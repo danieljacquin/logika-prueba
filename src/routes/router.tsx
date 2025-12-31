@@ -3,7 +3,7 @@ import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { AuthGuard } from '@/guards/AuthGuard';
 import Login from '@/pages/auth/Login';
 import { Bakanes } from '@/pages/dashboard/bakanes/Bakanes';
-import Categories from '@/pages/dashboard/bakanes/Categories';
+import Categories from '@/pages/dashboard/bakanes/categories/Categories';
 import Dashboard from '@/pages/dashboard/Dashboard';
 import { PrivateRoutes, PublicRoutes } from '@/types/routes.type';
 

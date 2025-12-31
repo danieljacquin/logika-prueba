@@ -1,6 +1,7 @@
-import axios from 'axios';
+import axios, { type AxiosRequestConfig } from 'axios';
 
 import { getMessagesFromError } from '@/utils/getMessageFromError.util';
+import { getLocalStorage } from '@/utils/localStorage.util';
 
 // Instancia para autenticación
 export const authApi = axios.create({
@@ -13,9 +14,25 @@ export const authApi = axios.create({
 // Instancia para acciones
 export const actionsApi = axios.create({
   baseURL: import.meta.env.VITE_API_ACTIONS_URL,
-  headers: {
-    'Content-Type': 'application/json',
-  },
+});
+
+const updateHeader = (request: AxiosRequestConfig) => {
+  // Asegurarse de que headers exista
+  request.headers = request.headers || {};
+
+  const { token } = JSON.parse(getLocalStorage('token') as string);
+
+  request.headers = {
+    ...request.headers,
+    Authorization: 'Bearer ' + token.token,
+  };
+
+  return request;
+};
+
+actionsApi.interceptors.request.use((request) => {
+  updateHeader(request);
+  return request;
 });
 
 //interceptar respuestas

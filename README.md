@@ -3,6 +3,7 @@
 Implementación de una prueba técnica que evalúa habilidades en desarrollo frontend con React. La aplicación cuenta con dos vistas principales:
 
 ### ✨ Características principales:
+
 - ✅ Sistema de login/logout con rutas protegidas
 - ✅ Dashboard con datos dinámicos protegido por autenticación
 - ✅ Gestión de estado del servidor con React Query
@@ -72,3 +73,4 @@ npm run dev
 
 ## 🧑‍💻 Autor
 - Creado por Daniel Jacquin
+```

@@ -5,7 +5,7 @@ Implementación de una prueba técnica que evalúa habilidades en desarrollo fro
 ### ✨ Características principales:
 
 - ✅ Sistema de login/logout con rutas protegidas
-- ✅ Dashboard con datos dinámicos protegido por autenticación
+- ✅ Dashboard protegido por autenticación
 - ✅ Gestión de estado del servidor con React Query
 - ✅ Interfaz con Tailwind CSS
 - ✅ Tipado estático con TypeScript
@@ -27,7 +27,7 @@ Implementación de una prueba técnica que evalúa habilidades en desarrollo fro
 src/
 ├── api/              # Configuración de la API, axios, interceptores
 ├── components/       # Componentes genéricos y reutilizables
-├── pages/           # Páginas (Login y Dashboard)
+├── pages/           # Páginas (Login y Dashboard ) por feacture(dominio)
 ├── hooks/           # Hooks personalizados (useAuth, etc.)
 ├── context/         # Contextos (AuthContext, ThemeContext, etc.)
 ├── routes/          # Configuración del router, rutas privadas/públicas

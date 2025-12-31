@@ -5,8 +5,9 @@ const columns = [
   'Nombre de la categoria',
   'Icono de la categoria',
   'Estado',
-  'Descripcion',
-  'Fecha de creacion',
+  'Descripción',
+  'Fecha de creación',
+  'Acciones',
 ];
 
 type CategoriesTableProps = {
@@ -78,9 +79,6 @@ const CategoriesTable = ({
                   {column}
                 </th>
               ))}
-              <th className="px-5 py-2 text-left text-sm font-semibold text-gray-700 sticky top-0 z-10 bg-gray-100">
-                Actions
-              </th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200 whitespace-nowrap">

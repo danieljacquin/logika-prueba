@@ -49,8 +49,8 @@ npm install
 
 # 3. Configurar variables de entorno
 # Crear archivo .env en la raíz del proyecto:
-VITE_API_AUTH_URL=https://dev.apinetbo.bekindnetwork.com/api
-VITE_API_ACTIONS_URL=https://dev.api.bekindnetwork.com/api
+VITE_API_AUTH_URL=https://dev.apinetbo.bekindnetwork.com/api/Authentication/
+VITE_API_ACTIONS_URL=https://dev.api.bekindnetwork.com/api/v1/actions/
 
 # 4. Ejecutar en modo desarrollo
 npm run dev

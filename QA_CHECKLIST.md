@@ -13,8 +13,7 @@ Dashboard
 5. Carga inicial → muestra skeleton loading
 6. Paginación funciona → cambia página correctamente
 7. Sin datos → muestra empty state apropiado
-8. Error de API → muestra mensaje de error amigable
 
 Formulario
-9. Validación campos → muestra errores en tiempo real
-10. Creación exitosa → muestra notificación y actualiza listado
+8. Validación campos → muestra errores en tiempo real
+9. Creación exitosa → muestra notificación y actualiza listado
